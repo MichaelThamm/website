@@ -5,8 +5,12 @@
 <link rel="icon" type="image/x-icon" href="/static/RocketFav.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://skillicons.dev" crossorigin>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
@@ -96,7 +100,6 @@ logo-img {
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-search"></i></a>
     <a href="https://github.com/MichaelThamm/MichaelThamm/blob/main/MichaelThamm-CV.pdf" class="w3-bar-item w3-button w3-hide-small w3-hover-red"><i class="fa fa-handshake-o"></i> RESUME</a>
   </div>
@@ -105,7 +108,6 @@ logo-img {
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
@@ -123,7 +125,7 @@ logo-img {
   <p class="w3-center"><em>Tech Enthusiast</em></p>
   <div class="w3-row">
 	<div class="w3-col m6 w3-center w3-padding-large">
-      <img src="/static/Headshot.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="250" height="350">
+      <img src="/static/Headshot.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="250" height="350" loading="lazy">
       <p>
         <b>Michael Thamm</b>
       </p>
@@ -143,42 +145,74 @@ logo-img {
   </div>
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16" style="display: flex">
-  <div class="w3-quarter w3-section child-ver">
-    <div class="w3-row w3-center w3-dark-grey child-hor w3-padding-small">
-      <img src="/static/logos/LogoMasterOfScience.png" class="w3-image w3-round">
-    </div>
-    <span class="w3-medium child-hor">Electrical Engineering</span>
+<div class="w3-content w3-container w3-padding-32 w3-center">
+  <!-- Education -->
+  <div class="w3-row w3-padding-small">
+    <h4>Education</h4>
+    <p><i class="fa fa-graduation-cap" style="font-size:24px;"></i> <b>MASc</b> — Electrical Engineering</p>
+    <p><i class="fa fa-graduation-cap" style="font-size:24px;"></i> <b>BEng</b> — Electrical Engineering</p>
   </div>
-  <div class="w3-quarter w3-section child-ver">
-    <div class="w3-row w3-center w3-dark-grey child-hor">
-      <img src="/static/logos/LogoPython.png" class="w3-image w3-round" style="width:17%" title="Python">
-      <img src="/static/logos/LogoJava.png" class="w3-image w3-round" style="width:13%" title="Java">
-      <img src="/static/logos/LogoCpp.png" class="w3-image w3-round" style="width:22%" title="C++">
-    </div>
-    <span class="w3-medium child-hor">Programming Languages</span>
+  <!-- Countries Worked In -->
+  <div class="w3-row w3-padding-small">
+    <h4>Countries Worked In</h4>
+    <img src="https://flagcdn.com/w80/at.png" width="48" alt="Austria" title="Austria" style="margin:8px;" loading="lazy">
+    <img src="https://flagcdn.com/w80/ca.png" width="48" alt="Canada" title="Canada" style="margin:8px;" loading="lazy">
+    <img src="https://flagcdn.com/w80/de.png" width="48" alt="Germany" title="Germany" style="margin:8px;" loading="lazy">
+    <img src="https://flagcdn.com/w80/mx.png" width="48" alt="Mexico" title="Mexico" style="margin:8px;" loading="lazy">
+    <img src="https://flagcdn.com/w80/nl.png" width="48" alt="Netherlands" title="Netherlands" style="margin:8px;" loading="lazy">
+    <img src="https://flagcdn.com/w80/se.png" width="48" alt="Sweden" title="Sweden" style="margin:8px;" loading="lazy">
+    <img src="https://flagcdn.com/w80/us.png" width="48" alt="USA" title="USA" style="margin:8px;" loading="lazy">
   </div>
-  <div class="w3-quarter w3-section child-ver">
-    <div class="w3-row w3-center w3-dark-grey child-hor">
-      <img src="/static/logos/LogoDocker.png" class="w3-image w3-round" style="width:18%" title="Docker">
-      <img src="/static/logos/LogoGitLab.png" class="w3-image w3-round" style="width:15%" title="GitLab">
-      <img src="/static/logos/LogoLinux.png" class="w3-image w3-round" style="width:12%" title="Linux">
-      <img src="/static/logos/LogoTerraform.png" class="w3-image w3-round" style="width:14%" title="Terraform">
-      <img src="/static/logos/LogoAzureAD.png" class="w3-image w3-round" style="width:14%" title="Azure AD">
-      <img src="/static/logos/LogoTraefik.png" class="w3-image w3-round" style="width:11%" title="Traefik Proxy">
-    </div>
-    <span class="w3-medium child-hor">Dev Tools</span>
+  <!-- Skill Badges -->
+  <div class="w3-row w3-padding-small">
+    <h4>Systems</h4>
+    <img src="https://skillicons.dev/icons?i=ubuntu&theme=light" alt="Ubuntu" title="Ubuntu" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=linux&theme=light" alt="Linux" title="Linux" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=kali&theme=light" alt="Kali Linux" title="Kali Linux" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=windows&theme=light" alt="Windows" title="Windows" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=raspberrypi&theme=light" alt="Raspberry Pi" title="Raspberry Pi" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=arduino&theme=light" alt="Arduino" title="Arduino" loading="lazy">
   </div>
-  <div class="w3-quarter w3-section child-ver">
-    <div class="w3-row w3-center w3-dark-grey child-hor">
-      <img src="/static/flags/flag-of-Austria.png" class="w3-round-large w3-image w3-hover-opacity-off" style="width:20%" title="Austria">
-      <img src="/static/flags/flag-of-Canada.png" class="w3-round-large w3-image w3-hover-opacity-off" style="width:20%" title="Canada">
-    </div>
-    <div class="w3-row w3-center w3-dark-grey child-hor">
-      <img src="/static/flags/flag-of-Mexico.png" class="w3-round-large w3-image w3-hover-opacity-off" style="width:20%" title="Mexico">
-      <img src="/static/flags/flag-of-USA.png" class="w3-round-large w3-image w3-hover-opacity-off" style="width:20%" title="USA">
-    </div>
-    <span class="w3-medium child-hor">Countries Worked In</span>
+  <div class="w3-row w3-padding-small">
+    <h4>Languages</h4>
+    <img src="https://skillicons.dev/icons?i=py&theme=light" alt="Python" title="Python" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=cpp&theme=light" alt="C++" title="C++" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=bash&theme=light" alt="Bash" title="Bash" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java" title="Java" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=matlab&theme=light" alt="MATLAB" title="MATLAB" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=golang&theme=light" alt="Go" title="Go" loading="lazy">
+  </div>
+  <div class="w3-row w3-padding-small">
+    <h4>Editors</h4>
+    <img src="https://skillicons.dev/icons?i=vim&theme=light" alt="Vim" title="Vim" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=vscode&theme=light" alt="VS Code" title="VS Code" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=neovim&theme=light" alt="Neovim" title="Neovim" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=obsidian&theme=light" alt="Obsidian" title="Obsidian" loading="lazy">
+  </div>
+  <div class="w3-row w3-padding-small">
+    <h4>DevOps &amp; CI/CD</h4>
+    <img src="https://skillicons.dev/icons?i=gitlab&theme=light" alt="GitLab" title="GitLab" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=githubactions&theme=light" alt="GitHub Actions" title="GitHub Actions" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=docker&theme=light" alt="Docker" title="Docker" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=kubernetes&theme=light" alt="Kubernetes" title="Kubernetes" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=terraform&theme=light" alt="Terraform" title="Terraform" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=nginx&theme=light" alt="NGINX" title="NGINX" loading="lazy">
+  </div>
+  <div class="w3-row w3-padding-small">
+    <h4>Cloud &amp; Observability</h4>
+    <img src="https://skillicons.dev/icons?i=aws&theme=light" alt="AWS" title="AWS" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=azure&theme=light" alt="Azure" title="Azure" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=heroku&theme=light" alt="Heroku" title="Heroku" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=cloudflare&theme=light" alt="Cloudflare" title="Cloudflare" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=openstack&theme=light" alt="OpenStack" title="OpenStack" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=grafana&theme=light" alt="Grafana" title="Grafana" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=prometheus&theme=light" alt="Prometheus" title="Prometheus" loading="lazy">
+  </div>
+  <div class="w3-row w3-padding-small">
+    <h4>Databases</h4>
+    <img src="https://skillicons.dev/icons?i=postgresql&theme=light" alt="PostgreSQL" title="PostgreSQL" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL" title="MySQL" loading="lazy">
+    <img src="https://skillicons.dev/icons?i=redis&theme=light" alt="Redis" title="Redis" loading="lazy">
   </div>
 </div>
 
@@ -223,7 +257,20 @@ logo-img {
   <p class="w3-center"><em>For my latest professional experience, see my resume in the navigation bar at the top of the screen</em></p>
   <div>
       <div class="w3-container w3-center">
-        <a href="https://www.riskine.com/en/"><img src="/static/logos/LogoRiskine.png" class="w3-image w3-round" style="width:15%"></a>
+        <a href="https://canonical.com/"><img src="https://assets.ubuntu.com/v1/5d6da5c4-logo-canonical-aubergine.svg" class="w3-image" style="width:15%" loading="lazy" alt="Canonical"></a>
+      </div>
+      <p class="w3-center">I work for <a href="https://canonical.com/">Canonical</a> as a <em>Software Engineer I</em> on the Observability team, building and maintaining open source cloud infrastructure.<br>
+        My responsibilities and tech stack:
+        <ul>
+          <li>Develop and maintain Juju (a cloud-agnostic orchestrator) charms for Grafana, Opentelemetry-collector, Loki, Mimir, Tempo, etc.</li>
+          <li>Contribute to open-source charm libraries</li>
+          <li>Build and test artifacts (rocks, snaps, charms) for observability workloads</li>
+          <li>Work with Kubernetes, Terraform, and cloud-native observability tooling</li>
+        </ul>
+  </div>
+  <div>
+      <div class="w3-container w3-center">
+        <a href="https://www.riskine.com/en/"><img src="/static/logos/LogoRiskine.png" class="w3-image w3-round" style="width:15%" loading="lazy"></a>
       </div>
       <p class="w3-center">I worked for <a href="https://www.riskine.com/en/">riskine</a> as a <em>DevOps Engineer</em> where I managed GitLab CI/CD pipelines and company infrastructure as a global systems administrator.<br>
         My responsibilities and tech stack:
@@ -250,7 +297,7 @@ logo-img {
   </div>
   <div>
     <div class="w3-container w3-center">
-      <a href="https://kinarm.com/"><img src="/static/logos/LogoKinarm.jpg" class="w3-image w3-round" style="width:15%"></a>
+      <a href="https://kinarm.com/"><img src="/static/logos/LogoKinarm.jpg" class="w3-image w3-round" style="width:15%" loading="lazy"></a>
     </div>
     <p class="w3-center">I worked for <a href="https://kinarm.com/">Kinarm</a> as a <em>Juniour Software Developer</em> where I professionally transitioned careers from Electrical Engineer to Software Engineer.<br>
     My responsibilities and tech stack:</p>
@@ -271,7 +318,7 @@ logo-img {
   </div>
   <div>
     <div class="w3-container w3-center">
-      <a href="https://www.bravecs.com/"><img src="/static/logos/LogoBraveCS.png" class="w3-image w3-round" style="width:15%"></a>
+      <a href="https://www.bravecs.com/"><img src="/static/logos/LogoBraveCS.png" class="w3-image w3-round" style="width:15%" loading="lazy"></a>
     </div>
     <p class="w3-center">I worked for <a href="https://www.bravecs.com/">Brave Control Solutions</a> as a <em>Controls Specialist</em> where I worked on projects in Canada: British Columbia & Ontario, USA: Michigan, and Mexico: Senora.<br>
     My responsibilities and tech stack:</p>
@@ -290,31 +337,6 @@ logo-img {
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <div class="w3-container w3-center w3-padding-32">
-    <div class="w3-large w3-margin-bottom">
-      <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mikethamm44@gmail.com<br>
-    </div>
-    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-    <form>
-      <input type="hidden" name="method" value="emailer.py">
-      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-        <div class="w3-half">
-          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="input-name">
-        </div>
-        <div class="w3-half">
-          <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" id="input-email">
-        </div>
-      </div>
-      <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" id="input-message">
-      <button class="w3-button w3-black w3-right w3-section" type="submit" id="btn-submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div>
-</div>
-
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-32 w3-hover-opacity-off">
   <div class="w3-medium w3-section">
@@ -326,7 +348,7 @@ logo-img {
   </div>
 </footer>
 
-<script>
+<script defer>
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
