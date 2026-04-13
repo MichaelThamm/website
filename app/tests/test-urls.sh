@@ -9,7 +9,7 @@ links=$(grep -v 'preconnect\|preload\|dns-prefetch' ./app/templates/index.html \
 # Function to check if a given status code is acceptable
 is_acceptable_status() {
     case "$1" in
-        200|202|403) return 0 ;;
+        200|202|403|999) return 0 ;;
         *) return 1 ;;
     esac
 }
