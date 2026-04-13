@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Parse index.html and extract all href attributes starting with https://
-links=$(grep -o 'href="https://[^"]*' ./app/templates/index.html | sed 's/href="//')
+# Exclude preconnect/preload/dns-prefetch hints — these are bare origins, not navigable URLs
+links=$(grep -v 'preconnect\|preload\|dns-prefetch' ./app/templates/index.html \
+    | grep -o 'href="https://[^"]*' \
+    | sed 's/href="//')
 
 # Function to check if a given status code is acceptable
 is_acceptable_status() {
